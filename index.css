@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* ...........................................Main css starts here.................... */
+body {
+  font-family: "Poppins", sans-serif;
+}
+.topHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topSocialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.topSocialLink {
+  margin-left: 20px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.topSocialLinks a {
+  color: black;
+}
+
+/* ---------------------------Navbar css starts here -------------------------------- */
+.nav-link {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: 3rem;
+}
+.navbar-brand {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-link {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+/* ---------------------------Hero css starts here -------------------------------- */
+.hero {
+  display: flex;
+}
+
+#hero-blog-para {
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .main-container {
+    width: 90%;
+  }
+}
+/* ...............................Main Container .................................. */
+
+/* ...............................sidebar Container .................................. */
+.sidebar h3 {
+  width: 100%;
+}
+.sidebar p {
+  width: 90%;
+}
+.profile-pic {
+  /* margin-left: 1em; */
+  height: 15em;
+  width: 15em;
+  /* border-radius: 10px; */
+  transition: all 0.3s;
+}
+.profile-pic:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* ..........................................All-Blogs..................................... */
+.all-blogs-heading {
+  width: 100%;
+  text-align: center;
+}
+.all-blogs {
+  display: flex;
+}
+.all-blogs a {
+  margin: auto;
+  transition: all 0.2s;
+}
+.all-blogs a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+  .all-blogs {
+    flex-direction: column;
+  }
+  .all-blogs a {
+    margin-top: 2em;
+  }
+}
+
+.show-more-btn {
+  display: flex;
+  justify-content: center;
+}
+/* ...........................................>Footer/.......................................... */
+.footer {
+  text-align: center;
+  margin: 1rem 0;
+}
